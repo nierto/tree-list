@@ -6,7 +6,7 @@ rem If a folder is passed in as first argument, use it;
 rem otherwise set ROOT_DIR to some default path.
 rem --------------------------------------------------
 if "%~1"=="" (
-    SET "ROOT_DIR=\\wsl$\Ubuntu\home\ebisu\nCore"
+    SET "ROOT_DIR=\\set\default\path\here"
 ) else (
     SET "ROOT_DIR=%~1"
 )
