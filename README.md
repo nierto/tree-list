@@ -25,21 +25,21 @@ This batch script recursively lists directories and files starting from a specif
 Open a Command Prompt, navigate to the directory containing the script, and run:
 
 <code-language-used>batch
-list_tree.bat [root_directory]
+TLF.bat [root_directory]
 </code-language-used>
 
 - **Without Arguments:**  
   If you run the script without arguments, it will use the default path.
 
 <code-language-used>batch
-list_tree.bat
+TLF.bat
 </code-language-used>
 
 - **With a Specific Directory:**  
   To list the tree for a specific folder, provide the folder path as an argument.
 
 <code-language-used>batch
-list_tree.bat "C:\MyProjects"
+TLF.bat "C:\MyProjects"
 </code-language-used>
 
 ## Example
@@ -47,11 +47,11 @@ list_tree.bat "C:\MyProjects"
 Assuming you have a directory `C:\ExampleFolder` that you want to list:
 
 1. Open Command Prompt.
-2. Navigate to the folder where `list_tree.bat` is located.
+2. Navigate to the folder where `TLF.bat` is located.
 3. Execute the command:
 
 <code-language-used>batch
-list_tree.bat "C:\ExampleFolder"
+TLF.bat "C:\ExampleFolder"
 </code-language-used>
 
 The script will then output the directory structure of `C:\ExampleFolder`, indenting each subdirectory level and excluding `.gitignore`, `.dist`, and `.git`.
@@ -63,6 +63,9 @@ The script will then output the directory structure of `C:\ExampleFolder`, inden
 
 - **Exclusion Criteria:**  
   To modify which files or directories to exclude, adjust the conditions within the loops that filter for `.gitignore`, `.dist`, and `.git`.
+
+  use > to output the result to a file, like TLF.bat "somepath" > output.txt
+  
 
 ## License
 
